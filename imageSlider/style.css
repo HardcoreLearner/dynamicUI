@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    height: 100vh;
+    width: 100vw;
+    background-color: grey;
+}
+
+.sliderHolder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}
+
+.slider {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+.arrow {
+    width: 100px;
+    height: 75px;
+    border: 3px solid black;
+    cursor: pointer;
+    background-color: white;
+}
+
+.imageHolder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid orange;
+}
+
+.imageHolder img {
+    width: 1000px;
+    height: 500px;
+}
+
+.image1 {
+    display: none;
+}
+
+.image2 {
+    display: none;
+}
+
+.image3 {
+    display: none;
+}
+
+.image4 {
+    display: none;
+}
+
+.image5 {
+    display: none;
+}
+
+.sliderCircles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+}
+
+.circle {
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.imageHolder .selectedImg {
+    display: inherit;
+    object-fit: contain;
+    background-color: white;
+}
+
+.selectedCircle {
+    background-color: orange;
+}

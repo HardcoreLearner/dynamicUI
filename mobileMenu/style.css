@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 481px) {
+    body {
+        display: grid;
+        grid-template-rows: 50px 100px 1fr;
+        background-color: #2472f7;
+    }
+
+    .color {
+        background-color: #2472f7;
+    }
+
+    .menu img {
+        width: 50px;
+        height: 50px;
+        filter: invert(54%) sepia(7%) saturate(13%) hue-rotate(338deg) brightness(92%) contrast(86%);
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        align-items: center;
+    }
+
+    .tabs {
+        color: grey;
+        padding: 0;
+        width: 23%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .selected {
+        color: black;
+        border-bottom: 4px solid black;
+        font-weight: bold;
+    }
+
+    .selected img {
+        filter: none;
+    }
+
+    .tabs p {
+        font-size: 20px;
+    }
+
+    .content {
+        padding: 12px;
+    }
+
+    .contentHolder {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+    }
+
+    .contentHolder p {
+        width: 90%;
+    }
+}
